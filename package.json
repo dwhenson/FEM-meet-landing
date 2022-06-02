@@ -1,0 +1,31 @@
+{
+  "author": "Dave Henson",
+  "description": "FEM Challenge - Meet Landing Page",
+  "version": "1.0.0",
+  "keywords": [],
+  "name": "meet-page",
+  "source": "src/index.html",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.6.0",
+    "eslint": "8.6.0",
+    "eslint-config-healthier": "3.2.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-html": "6.2.0",
+    "eslint-plugin-import": "2.25.3",
+    "eslint-plugin-unicorn": "40.0.0",
+    "healthier": "4.0.0",
+    "parcel": "2.0.1",
+    "prettier": "2.5",
+    "sass": "1.45.0",
+    "stylelint": "14.2.0",
+    "stylelint-config-prettier": "9.0.3",
+    "stylelint-order": "5.0.0",
+    "stylelint-scss": "4.1.0",
+    "stylelint-use-logical-spec": "3.2.2"
+  }
+}

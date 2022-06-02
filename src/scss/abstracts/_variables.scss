@@ -1,0 +1,36 @@
+/*  Custom Properties
+    ================================================== */
+
+:root {
+  /* Common colors */
+  --clr-primary-100: hsl(192, 37%, 48%);
+  --clr-primary-100: hsl(268, 34%, 53%);
+  --clr-primary-200: hsl(240, 10%, 57%);
+  --clr-primary-400: hsl(240, 21%, 20%);
+  --clr-secondary-100: hsl(0, 0, 98%);
+  --clr-secondary-200: hsl(192, 90%, 77%);
+  --clr-secondary-300: hsl(268, 100%, 86%);
+
+  /* Spacing */
+  --space-3xs: clamp(0.31rem, calc(0.29rem + 0.09vw), 0.38rem);
+  --space-2xs: clamp(0.56rem, calc(0.53rem + 0.18vw), 0.69rem);
+  --space-xs: clamp(0.88rem, calc(0.82rem + 0.27vw), 1.06rem);
+  --space-s: clamp(1.13rem, calc(1.05rem + 0.36vw), 1.38rem);
+  --space-m: clamp(1.69rem, calc(1.58rem + 0.54vw), 2.06rem);
+  --space-l: clamp(2.25rem, calc(2.11rem + 0.71vw), 2.75rem);
+  --space-xl: clamp(3.38rem, calc(3.16rem + 1.07vw), 4.13rem);
+  --space-2xl: clamp(4.5rem, calc(4.21rem + 1.43vw), 5.5rem);
+  --space-3xl: clamp(6.75rem, calc(6.32rem + 2.14vw), 8.25rem);
+
+  /* Font styles */
+  --ff-body: "Red Hat", sans-serif;
+
+  /* Font sizes */
+  --step--1: clamp(0.94rem, calc(0.89rem + 0.23vw), 1.1rem);
+  --step-0: clamp(1.13rem, calc(1.05rem + 0.36vw), 1.38rem);
+  --step-1: clamp(1.35rem, calc(1.24rem + 0.53vw), 1.72rem);
+  --step-2: clamp(1.62rem, calc(1.47rem + 0.76vw), 2.15rem);
+  --step-3: clamp(1.94rem, calc(1.73rem + 1.06vw), 2.69rem);
+  --step-4: clamp(2.8rem, calc(2.4rem + 2vw), 4.2rem);
+  // --step-4: clamp(2.33rem, calc(2.04rem + 1.46vw), 3.36rem);
+}
