@@ -8,6 +8,6 @@
   gap: var(--space-s);
 
   @include respond-to("medium") {
-    flex-direction: row;
+    // flex-direction: row;
   }
 }

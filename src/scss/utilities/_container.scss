@@ -1,5 +1,5 @@
 /* Add left and right padding to element */
-
 .container {
-  padding-inline: clamp(1rem, 5%, 2rem);
+  inline-size: min(100vw - 2rem, var(--container-max, 80%));
+  margin-inline: auto;
 }

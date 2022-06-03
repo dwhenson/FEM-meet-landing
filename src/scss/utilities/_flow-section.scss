@@ -1,5 +1,5 @@
 /* Add vertical rhythm between sections */
 
-.flow-section > * + * {
-  margin-block-start: max(8vh, var(--space-l));
+:is(body, .flow-section) > * + * {
+  margin-block-start: var(--flow-section, var(--space-l));
 }

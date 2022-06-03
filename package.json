@@ -12,20 +12,21 @@
   "license": "ISC",
   "devDependencies": {
     "@parcel/transformer-sass": "^2.6.0",
-    "eslint": "8.6.0",
+    "eslint": "8.16.0",
     "eslint-config-healthier": "3.2.0",
-    "eslint-config-prettier": "^8.3.0",
+    "eslint-config-prettier": "8.5.0",
     "eslint-plugin-html": "6.2.0",
-    "eslint-plugin-import": "2.25.3",
-    "eslint-plugin-unicorn": "40.0.0",
-    "healthier": "4.0.0",
-    "parcel": "2.0.1",
-    "prettier": "2.5",
-    "sass": "1.45.0",
-    "stylelint": "14.2.0",
+    "eslint-plugin-import": "2.26.0",
+    "eslint-plugin-unicorn": "42.0.0",
+    "healthier": "5.0.1",
+    "parcel": "2.6.0",
+    "prettier": "2.6",
+    "sass": "1.52.2",
+    "stylelint": "^14.8.5",
     "stylelint-config-prettier": "9.0.3",
+    "stylelint-config-recommended-scss": "^6.0.0",
     "stylelint-order": "5.0.0",
-    "stylelint-scss": "4.1.0",
-    "stylelint-use-logical-spec": "3.2.2"
+    "stylelint-scss": "4.2.0",
+    "stylelint-use-logical-spec": "^4.0.0"
   }
 }

@@ -2,8 +2,8 @@
 
 :focus-visible {
   opacity: 1 !important;
-  outline: max(2px, 0.15em) solid var(--clr-primary-100);
-  outline-offset: max(2px, 0.15em);
+  outline: 2px solid var(--clr-primary-100);
+  outline-offset: 2px;
 }
 
 :focus:not(:focus-visible) {
