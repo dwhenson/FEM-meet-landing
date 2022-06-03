@@ -4,8 +4,8 @@
 :root {
   /* Common colors */
   --clr-primary-100: hsl(192, 37%, 48%);
-  --clr-primary-100: hsl(268, 34%, 53%);
-  --clr-primary-200: hsl(240, 10%, 57%);
+  --clr-primary-200: hsl(268, 34%, 53%);
+  --clr-primary-300: hsl(240, 10%, 57%);
   --clr-primary-400: hsl(240, 21%, 20%);
   --clr-secondary-100: hsl(0, 0, 98%);
   --clr-secondary-200: hsl(192, 90%, 77%);
@@ -32,5 +32,4 @@
   --step-2: clamp(1.62rem, calc(1.47rem + 0.76vw), 2.15rem);
   --step-3: clamp(1.94rem, calc(1.73rem + 1.06vw), 2.69rem);
   --step-4: clamp(2.8rem, calc(2.4rem + 2vw), 4.2rem);
-  // --step-4: clamp(2.33rem, calc(2.04rem + 1.46vw), 3.36rem);
 }

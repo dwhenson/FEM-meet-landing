@@ -5,6 +5,11 @@
   box-sizing: border-box;
 }
 
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
 /* Remove default margin */
 body,
 h1,
@@ -17,7 +22,8 @@ blockquote,
 dl,
 dd,
 ul,
-ol {
+ol,
+button {
   margin: 0;
 }
 
@@ -41,12 +47,6 @@ h4,
   padding-inline: 0;
 }
 
-/* Set core root defaults */
-html {
-  scroll-behavior: smooth;
-  min-block-size: 100vh;
-}
-
 /* Set core body defaults */
 body {
   min-block-size: 100vh;
@@ -55,7 +55,11 @@ body {
   line-height: 1.5;
   color: #000;
   text-rendering: optimizeSpeed;
- -webkit-font-smoothing: antialiased;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
 }
 
 /* Make images easier to work with */
@@ -68,12 +72,16 @@ svg {
   max-inline-size: 100%;
 }
 
-img[width] {
-  inline-size: auto; /* Defer to max-width */
+/* Preserve aspect ratio */
+img[width][height] {
+  block-size: auto;
 }
 
-img[width][height] {
-  block-size: auto; /* Preserve aspect ratio */
+/* Let SVG scale without boundaries */
+img[src$=".svg"] {
+  width: 100%;
+  height: auto;
+  max-width: none;
 }
 
 /* Inherit fonts for inputs and buttons */
@@ -82,6 +90,11 @@ button,
 textarea,
 select {
   font: inherit;
+}
+
+/* Add space for anchor links */
+[id] {
+  scroll-margin-top: 2ex;
 }
 
 /* Remove all animations and transitions for people that prefer not to see them */
