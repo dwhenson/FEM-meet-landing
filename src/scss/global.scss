@@ -1,40 +1,48 @@
-@import "reset";
+@use "reset";
 
 /* ==================================================
   Global Styles
   ================================================== */
 
-@import "abstracts/variables";
-@import "abstracts/breakpoints";
+@use "abstracts/variables";
+@use "abstracts/breakpoints";
+
+
+/* ==================================================
+Composition
+================================================== */
+
+@use "composition/align-content";
+
+/* ==================================================
+Utilities
+================================================== */
+
+@use "utilities/container";
+@use "utilities/flow-content";
+@use "utilities/flow-section";
+@use "utilities/outline";
+@use "utilities/skip-link";
+@use "utilities/split";
+@use "utilities/visually-hidden";
+
+/* ==================================================
+Blocks
+================================================== */
+
 
 /* Base Styles
-   ================================================== */
+================================================== */
 body {
-  font-family: var(--ff-body);
   background-color: var(--secondary-100);
+  font-family: var(--ff-body);
+  text-align: center;
 }
 
 h1 {
+  font-size: var(--step-4);
 }
 
-/* ==================================================
-  Composition
-  ================================================== */
-
-@import "composition/align-content";
-
-/* ==================================================
-  Utilities
-  ================================================== */
-
-@import "utilities/container";
-@import "utilities/flow-content";
-@import "utilities/flow-section";
-@import "utilities/outline";
-@import "utilities/skip-link";
-@import "utilities/split";
-@import "utilities/visually-hidden";
-
-/* ==================================================
-   Blocks
-   ================================================== */
+h2 {
+  font-size: var(--step-3);
+}

@@ -7,7 +7,7 @@
   justify-content: space-between;
   gap: var(--space-s);
 
-  @include respond-to("medium") {
-    // flex-direction: row;
-  }
+  // @include respond-to("medium") {
+  //   flex-direction: row;
+  // }
 }
