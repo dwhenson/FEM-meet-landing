@@ -1,0 +1,25 @@
+.button {
+  display: block;
+  border: 0;
+  border-radius: 99999px;
+  background-color: var(--clr-bg, var(--clr-primary-100));
+  transition: background-color 250ms;
+  font-weight: 900;
+  text-decoration: none;
+  color: var(--clr-secondary-100);
+  padding-inline: var(--space-s);
+  padding-block: calc(var(--space-xxs));
+
+  &:is(:hover, :focus) {
+    --clr-bg: var(--clr-secondary-200);
+    cursor: pointer;
+  }
+
+  &.link {
+    --clr-bg: var(--clr-primary-200);
+
+    &:is(:hover, :focus) {
+      --clr-bg: var(--clr-secondary-300);
+    }
+  }
+}

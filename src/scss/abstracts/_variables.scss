@@ -30,4 +30,10 @@
   --step-2: clamp(1.62rem, calc(1.47rem + 0.76vw), 2.15rem);
   --step-3: clamp(1.94rem, calc(1.73rem + 1.06vw), 2.69rem);
   --step-4: clamp(2.8rem, calc(2.4rem + 2vw), 4.2rem);
+
+  /* Box shadow */
+  --shadow-color: 240, 10%, 57%;
+  --shadow-elevation-low: 0.3px 0.5px 0.8px hsl(var(--shadow-color) / 0.14),
+    0.6px 1px 1.6px -0.5px hsl(var(--shadow-color) / 0.28),
+    1.2px 2.1px 3.3px -1px hsl(var(--shadow-color) / 0.42);
 }
