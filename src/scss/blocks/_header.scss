@@ -1,17 +1,6 @@
-.input-wrapper {
-  display: flex;
-  align-items: baseline;
-  padding: 1.5rem;
-
-  input[type="text"] {
-    display: inline-block;
-    inline-size: 100%;
-    border: 0;
-    line-height: 1;
-    cursor: pointer;
-  }
-
-  input[type="checkbox"] {
-    // margin-inline-end: 1.5rem;
+header {
+  .logo {
+    inline-size: 12rem;
+    padding: var(--space-s);
   }
 }
