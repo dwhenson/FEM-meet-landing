@@ -5,8 +5,7 @@
   ================================================== */
 
 @use "abstracts/variables";
-@use "abstracts/breakpoints";
-
+// @use "abstracts/breakpoints";
 
 /* ==================================================
 Composition
@@ -25,19 +24,27 @@ Utilities
 @use "utilities/skip-link";
 @use "utilities/split";
 @use "utilities/visually-hidden";
+@use "utilities/full-bleed";
 
 /* ==================================================
 Blocks
 ================================================== */
 
 @use "blocks/header";
+@use "blocks/banner";
+@use "blocks/features";
 
 /* Base Styles
 ================================================== */
 body {
   background-color: var(--secondary-100);
   font-family: var(--ff-body);
+  font-size: var(--step-0);
   text-align: center;
+}
+
+:is(h1, h2) {
+  color: var(--clr-primary-400);
 }
 
 h1 {
@@ -46,4 +53,8 @@ h1 {
 
 h2 {
   font-size: var(--step-3);
+}
+
+p {
+  color: var(--clr-primary-300);
 }

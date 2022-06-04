@@ -1,5 +1,5 @@
 /* Add vertical rhythm inside elements */
 
 .flow-content > * + * {
-  margin-block-start: var(--flow-content, var(--space-s));
+  margin-block-start: var(--flow-content, var(--space-xs));
 }

@@ -2,10 +2,11 @@
 
 .split {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  // flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  gap: var(--space-s);
+  gap: var(--bespoke-gap, var(--space-s))
 
   // @include respond-to("medium") {
   //   flex-direction: row;
