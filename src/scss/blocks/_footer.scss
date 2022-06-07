@@ -3,13 +3,29 @@
 .footer {
   --container-max: min(100%, 75rem);
 
+  position: relative;
   grid-column: 1 / -1;
-  padding: var(--space-xl);
+  padding-block: var(--space-xl);
   background-color: var(--clr-primary-100);
 
-  :is(h2, p) {
-    color: var(--clr-secondary-100);
+  &::before {
+    content: " ";
+    position: absolute;
+    display: block;
+    opacity: 0.1;
+    inset-block-start: 0;
+    inset-inline-start: 0;
+    inline-size: 100%;
+    block-size: 100%;
+    background-image: url("../images/tablet/image-footer.jpg");
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 
+  :is(h2, p) {
+    font-weight: 900;
+    color: var(--clr-secondary-100);
 
     @include respond-to("large") {
       text-align: start;
@@ -17,12 +33,15 @@
   }
 
   .text {
-    --bespoke-gap: var(--space-m);
+    --bespoke-gap: var(--space-l);
 
+    flex-wrap: wrap;
+    align-items: center;
 
-    p {
-      max-inline-size: min(100%, 27.5rem);
-      font-weight: 5       00;
+    > * {
+      flex-basis: min(100%, 15rem);
     }
   }
+
+  // FIXME button hover not working as only hovers over footer - psudeo el issue?
 }

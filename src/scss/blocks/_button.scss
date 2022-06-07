@@ -1,5 +1,6 @@
-.button {
+.primary-100 {
   display: block;
+  max-inline-size: fit-content;
   border: 0;
   border-radius: 99999px;
   background-color: var(--clr-bg, var(--clr-primary-100));
@@ -12,10 +13,11 @@
 
   &:is(:hover, :focus) {
     --clr-bg: var(--clr-secondary-200);
+
     cursor: pointer;
   }
 
-  &.link {
+  &.primary-200 {
     --clr-bg: var(--clr-primary-200);
 
     &:is(:hover, :focus) {

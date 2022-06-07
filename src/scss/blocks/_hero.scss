@@ -1,0 +1,19 @@
+@use "../abstracts/breakpoints" as *;
+
+.hero {
+  --bespoke-gap: var(--space-xxs);
+  --min: 30rem;
+
+  flex-wrap: wrap;
+
+
+  .img {
+    // flex-basis: min(50% - var(--bespoke-gap), 30rem);
+  }
+
+  .text {
+    // flex-basis: var(--min);
+    --container-max: 20rem;
+    padding: var(--space-m);
+  }
+}
