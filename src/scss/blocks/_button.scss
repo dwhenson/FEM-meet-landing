@@ -27,6 +27,7 @@
     transition: opacity 300ms ease-in-out;
   }
 
+  &:focus::after,
   &:hover::after {
     opacity: 1;
   }
