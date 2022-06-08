@@ -33,7 +33,6 @@
 
   &:is(:hover, :focus) {
     --clr-bg: var(--clr-secondary-200);
-
     cursor: pointer;
   }
 

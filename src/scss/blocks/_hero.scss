@@ -2,7 +2,6 @@
 
 .hero {
   --bespoke-gap: var(--space-xxs);
-
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
@@ -10,19 +9,18 @@
   img {
     flex: 0 1 auto;
     max-inline-size: max(11rem, calc(50% - var(--bespoke-gap)));
+
+    &:last-of-type {
+      @include respond-to("large") {
+        order: 1;
+      }
+    }
   }
 
   .text {
     --min: min(100%, 20rem);
-
     flex: 1 1 var(--min);
     max-inline-size: 35rem;
     padding: var(--space-m);
-  }
-
-  .order-last {
-    @include respond-to("large") {
-      order: 1;
-    }
   }
 }
