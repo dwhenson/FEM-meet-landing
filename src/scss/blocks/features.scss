@@ -1,19 +1,14 @@
-@use "../abstracts/breakpoints" as *;
-
 .features {
   .images {
-    --container-max: min(100%, 75rem);
-    --bespoke-gap: var(--space-s);
-    --min: 10rem;
+    --container-max: min(100%, 65rem);
+    --bespoke-gap: var(--space-xs);
+    --min: 12rem;
 
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(min(100%, var(--min)), 1fr));
     gap: var(--bespoke-gap);
 
-
-
     img {
-      display: inline-block;
       border-radius: 1rem;
     }
   }
@@ -29,6 +24,4 @@
       color: var(--clr-primary-100);
     }
   }
-
-
 }

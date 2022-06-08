@@ -2,18 +2,27 @@
 
 .hero {
   --bespoke-gap: var(--space-xxs);
-  --min: 30rem;
 
   flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 
-
-  .img {
-    // flex-basis: min(50% - var(--bespoke-gap), 30rem);
+  img {
+    flex: 0 1 auto;
+    max-inline-size: max(11rem, calc(50% - var(--bespoke-gap)));
   }
 
   .text {
-    // flex-basis: var(--min);
-    --container-max: 20rem;
+    --min: min(100%, 20rem);
+
+    flex: 1 1 var(--min);
+    max-inline-size: 35rem;
     padding: var(--space-m);
+  }
+
+  .order-last {
+    @include respond-to("large") {
+      order: 1;
+    }
   }
 }

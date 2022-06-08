@@ -47,6 +47,10 @@ body {
   text-align: center;
 }
 
+main {
+  --flow-section: var(--flow-s);
+}
+
 :is(h1, h2) {
   color: var(--clr-primary-400);
 }
