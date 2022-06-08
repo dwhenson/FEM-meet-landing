@@ -2,7 +2,6 @@
 
 .footer {
   --container-max: min(100%, 75rem);
-
   position: relative;
   grid-column: 1 / -1;
   padding-block: var(--space-xl);
@@ -34,7 +33,6 @@
 
   .text {
     --bespoke-gap: var(--space-l);
-
     flex-wrap: wrap;
     align-items: center;
 
